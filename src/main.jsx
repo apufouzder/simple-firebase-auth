@@ -12,6 +12,7 @@ import Register from './Register';
 import Order from './Order';
 import Providers from './Providers';
 import PrivateRoute from './Route/PrivateRoute';
+import Dashboard from './Dashboard';
 
 
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />
+      },
+      {
+        path: "/dashboard",
+        element: <PrivateRoute><Dashboard /></PrivateRoute>
       },
       {
         path: "/order",
