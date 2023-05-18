@@ -11,6 +11,7 @@ import Login from './Login';
 import Register from './Register';
 import Order from './Order';
 import Providers from './Providers';
+import PrivateRoute from './Route/PrivateRoute';
 
 
 
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/order",
-        element: <Order />,
+        element: <PrivateRoute><Order /></PrivateRoute>
       }
     ]
   },

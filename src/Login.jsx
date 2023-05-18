@@ -55,6 +55,7 @@ const Login = () => {
             .then(result => {
                 const loggedIn = result.user;
                 console.log(loggedIn);
+                form.reset();
             })
             .catch(error => {
                 console.log(error.message);
